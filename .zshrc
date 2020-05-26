@@ -98,3 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
+
+# add composer to path
+PATH="$HOME/.composer/vendor/bin:$PATH"
+
+export ANSIBLE_COW_SELECTION=random
+
+alias mayden-proxy='networksetup -setautoproxyurl "Wi-Fi" https://socket.maydensite.co.uk/socket.dat'
+alias proxy-off='networksetup -setautoproxystate "Wi-Fi" off'
+alias sshgrep='cat ~/.ssh/config | grep -A 1 '
+
+function plog () {
+    git push
+    git log --pretty=format:'%h' -n 1 | pbcopy
+}
+
