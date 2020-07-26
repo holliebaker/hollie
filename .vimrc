@@ -2,6 +2,7 @@ set number
 syntax on
 set ruler
 set showcmd
+set cursorline
 
 " indentation
 set expandtab
